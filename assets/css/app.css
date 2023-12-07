@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html{
+font-size: 62.5%;
+}
+
+body{
+    height: 80vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #272626;
+    color: #f2fcff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.window{
+    padding: 20px;
+}
+h1{
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 7px;
+}
+p{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-group{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input{
+    background-color: #f2fcff;
+    color: #272626;
+    height: 45px;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btnSubmit{
+    background-color: cornflowerblue;
+    color: #f2fcff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+.btnSubmit:active{
+    background-color: rgb(91, 135, 216);
+}
+.box{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #f2fcff;
+    border-radius: 5px;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.textBox{
+    font-size: 2em;
+    letter-spacing: 1.1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767px){
+    .textBox{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 400px){
+    p{
+        font-size: 1.7em;
+    }
+    .textBox{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .btnSubmit{
+        font-size: 1.7em;
+    }
+}
